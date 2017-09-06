@@ -6,7 +6,7 @@ public class ClearVersions {
 
     public static void clear() {
         Database db = Database.getInstance();
-        db.entryTable().clear();
+        db.versionTable().clear();
         db.filePackTable().clear();
     }
 

@@ -27,7 +27,7 @@ public class AddVersion {
         }
 
         Database db = Database.getInstance();
-        db.entryTable().add(ve);
+        db.versionTable().add(ve);
         db.filePackTable().add(fe);
     }
 

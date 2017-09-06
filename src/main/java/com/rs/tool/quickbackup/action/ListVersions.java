@@ -13,7 +13,7 @@ import java.util.Map;
 public class ListVersions {
 
     public static List<Version> list() {
-        EntryTable entryTable = Database.getInstance().entryTable();
+        EntryTable entryTable = Database.getInstance().versionTable();
         List<VersionEntry> list = entryTable.list();
         Map<Long, Version> map = new HashMap<>();
         for (VersionEntry e : list) {

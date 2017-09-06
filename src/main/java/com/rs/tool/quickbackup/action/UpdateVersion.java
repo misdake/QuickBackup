@@ -14,7 +14,7 @@ public class UpdateVersion {
         ve.description = description;
         ve.parent = version.parent == null ? 0 : version.parent.time;
 
-        EntryTable entryTable = Database.getInstance().entryTable();
+        EntryTable entryTable = Database.getInstance().versionTable();
         entryTable.update(ve);
     }
 
@@ -25,7 +25,7 @@ public class UpdateVersion {
         ve.description = version.description;
         ve.parent = parent;
 
-        EntryTable entryTable = Database.getInstance().entryTable();
+        EntryTable entryTable = Database.getInstance().versionTable();
         entryTable.update(ve);
     }
 

@@ -45,7 +45,7 @@ public class Database {
         db.close();
     }
 
-    public EntryTable entryTable() {
+    public EntryTable versionTable() {
         return new EntryTable(entryTable);
     }
     public FilePackTable filePackTable() {
